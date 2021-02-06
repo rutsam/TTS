@@ -22,7 +22,7 @@ class AttrDict(dict):
 
 def read_json_with_comments(json_path):
     # fallback to json
-    with open(json_path, "r") as f:
+    with open(json_path, "r", encoding="utf8") as f:
         input_str = f.read()
     # handle comments
     input_str = re.sub(r'\\\n', '', input_str)
