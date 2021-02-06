@@ -28,7 +28,7 @@ class ModelManager(object):
         else:
             # try the default location
             #path = Path(__file__).parent / "../.models.json"
-            path = Path(__file__).parent "..//rutsam_tts/tts/.models.json"
+            path = "C:/Users/samue/.cache/torch/hub/mozilla_TTS_dev/TTS/.models.json"
             self.read_models_file(path)
 
     def read_models_file(self, file_path):
