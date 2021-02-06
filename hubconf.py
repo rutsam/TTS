@@ -32,5 +32,5 @@ def tts(model_name='tts_models/en/ljspeech/tacotron2-DCA', vocoder_name='vocoder
 
 
 if __name__ == '__main__':
-    synthesizer = torch.hub.load('mozilla/TTS:hub_conf', 'tts', source='github')
+    synthesizer = torch.hub.load('rutsam/TTS:hub_conf', 'tts', source='github')
     synthesizer.tts("This is a test!")
